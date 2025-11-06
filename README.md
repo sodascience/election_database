@@ -12,7 +12,7 @@ The goal of this repository is to create an efficient analysis-ready relational 
 
 ## Using the database
 
-The database was created using [duckdb](https://duckdb.org), a fast and portable analytics database software. The latest version of the database `votes_tk2023.duckdb` is available on the releases page. The database can be queried directly in the `duckdb` CLI, but it also has excellent support in other programming languages e.g., R or python, so it's easy to integrate into a standard analysis workflow:
+The database was created using [duckdb](https://duckdb.org), a fast and portable analytics database software. The latest version of the database is available on the [releases page](https://github.com/sodascience/election_database/releases/). The database can be queried directly in the `duckdb` CLI, but it also has excellent support in other programming languages e.g., R or python, so it's easy to integrate into a standard analysis workflow:
 
 ```R
 library(tidyverse)
