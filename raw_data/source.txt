@@ -1,9 +1,9 @@
 
 Gemeente tellingen:
-https://data.overheid.nl/dataset/verkiezingsuitslag-tweede-kamer-2023#panel-resources
+https://www.kiesraad.nl/adviezen-en-publicaties/publicaties/2025/11/07/digitale-tellingsbestanden-gemeentelijk---en-hoofdstembureaus
 
 PC6:
-https://service.pdok.nl/cbs/postcode6/atom/downloads/cbs_pc6_2023.gpkg
+https://service.pdok.nl/cbs/postcode6/atom/downloads/cbs_pc6_2024.gpkg
 
 kandidatenlijst:
-https://www.kiesraad.nl/adviezen-en-publicaties/proces-verbalen/2023/10/23/definitief-vastgestelde-kandidatenlijsten-tk-2023
+https://www.kiesraad.nl/adviezen-en-publicaties/publicaties/2025/09/25/overzicht-kandidatenlijsten-tweede-kamerverkiezing-2025

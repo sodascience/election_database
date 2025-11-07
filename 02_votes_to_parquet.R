@@ -13,7 +13,7 @@ df_votes <-
 
 # candidates data
 df_candidates <- 
-  read_delim("raw_data/osv3-5_kandidaatgegevens_TK2023.csv", delim = ";", skip = 3) |> 
+  read_delim("raw_data/Overzicht+Kandidatenlijsten_TK2025_csv.csv", delim = ";") |> 
   select(
     kieskring_id = Kieskring,
     party = `Politieke Groepering`, 

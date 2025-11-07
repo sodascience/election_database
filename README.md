@@ -2,12 +2,16 @@
 [![rstats](https://img.shields.io/badge/Rstats-343434?logo=R)](https://cran.r-project.org/) [![duckdb](https://img.shields.io/badge/duckdb-343434?logo=duckdb)](https://duckdb.org)
 
 The Dutch government makes all data from the general elections (Tweede Kamerverkiezingen) available. For example:
-- Candidate list of the elections in 2023: [kiesraad.nl](https://www.kiesraad.nl/actueel/nieuws/2023/10/23/kandidatenlijsten-tweede-kamerverkiezing-2023-definitief)
-- Election results of the elections in 2023: [data.overheid.nl](https://data.overheid.nl/dataset/verkiezingsuitslag-tweede-kamer-2023#panel-resources)
+- Candidate list of the elections in 2025: [kiesraad.nl](https://www.kiesraad.nl/adviezen-en-publicaties/publicaties/2025/09/25/overzicht-kandidatenlijsten-tweede-kamerverkiezing-2025)
+- Election results of the elections in 2025: [kiesraad.nl](https://www.kiesraad.nl/adviezen-en-publicaties/publicaties/2025/11/07/digitale-tellingsbestanden-gemeentelijk---en-hoofdstembureaus)
 
 The problem: the format is quite horrible, because these data are not created with analysis in mind, but rather reliability, trustworthiness, and auditability on a local scale.
 
 The goal of this repository is to create an efficient analysis-ready relational database, which can be used for all kinds of election analysis, focussing on political parties, municipalities, or candidates. The smallest unit of analysis is the "stembureau" which is the locations where voting takes place. This data is also ready to be connected to external data sources through clear ID variables, efficient subtables. 
+
+This enables plotting and analysis!
+
+![votes plot](img/votes_per_party.png)
 
 
 ## Using the database
@@ -153,20 +157,19 @@ After downloading the source files, the repo should look like this:
 ├── voting_analysis.Rproj
 ├── 📁 raw_data/
 │   ├── .gitignore
-│   ├── 📜 osv3-5_kandidaatgegevens_TK2023.csv
+│   ├── 📜 Overzicht+Kandidatenlijsten_TK2025_csv.csv
 │   ├── 📦 pc6.gpkg
 │   ├── source.txt
 │   └── 📁 Gemeente tellingen/
-│       ├── 📜 Telling_TK2023_NBSB.eml.xml
-│       ├── 📜 Telling_TK2023_gemeente_Aa_en_Hunze.eml.xml
-│       ├── 📜 Telling_TK2023_gemeente_Aalsmeer.eml.xml
+│       ├── 📜 Telling_TK2025_gemeente_Aa_en_Hunze.eml.xml
+│       ├── 📜 Telling_TK2025_gemeente_Aalsmeer.eml.xml
 │       ├── ...
-│       ├── 📜 Telling_TK2023_gemeente_s-Gravenhage.eml.xml
-│       ├── 📜 Telling_TK2023_gemeente_s-Hertogenbosch.eml.xml
-│       └── 📜 Telling_TK2023_openbaar_lichaam_Bonaire.eml.xml
+│       ├── 📜 Telling_TK2025_openbaar_lichaam_Saba.eml.xml
+│       └── 📜 Telling_TK2025_openbaar_lichaam_Sint_Eustatius.eml.xml
 ├── 📁 img/
-│   └── 📊 schema.png
-│   └── schema.drawio
+│   ├── 📊 schema.png
+│   ├── schema.drawio
+│   └── 📊 votes_per_party.png
 └── 📁 processed_data/
 
 # made with J535D165/scitree
