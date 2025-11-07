@@ -9,6 +9,25 @@ extract_data <- function(eml) {
   gemeente <- eml$ManagingAuthority$AuthorityIdentifier$AuthorityIdentifier
   gemeente_id <- eml$ManagingAuthority$AuthorityIdentifier$Id
   stembureau_resultaten <- eml$Count$Election$Contests$Contest$ReportingUnitVotes
+  
+  # if there is only one stembureau, then the results are one level higher
+  if (!is_null(names(stembureau_resultaten))) return(
+    selection_to_votes(stembureau_resultaten$Selection) |>
+      mutate(
+        bureau = stembureau_resultaten$ReportingUnitIdentifier$ReportingUnitIdentifier,
+        bureau_id = stembureau_resultaten$ReportingUnitIdentifier$Id
+      ) |> 
+      mutate(
+        bureau = as_factor(bureau),
+        bureau_id = as_factor(bureau_id),
+        gemeente = as_factor(gemeente),
+        gemeente_id = as_factor(gemeente_id),
+        kieskring = as_factor(kieskring),
+        kieskring_id = as_factor(kieskring_id)
+      )
+  )
+  
+  # this is the most common case, loop over all stembureaus in the gemeente
   lapply(stembureau_resultaten, function(s) {
     selection_to_votes(s$Selection) |>
       mutate(

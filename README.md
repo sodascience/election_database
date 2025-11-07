@@ -14,7 +14,7 @@ The goal of this repository is to create an efficient analysis-ready relational 
 
 This enables plotting and analysis!
 
-![votes plot](img/votes_per_party.png)
+![votes plot](img/votes_per_party_candidate.png)
 
 
 ## Using the database
