@@ -2,7 +2,7 @@ library(tidyverse)
 library(duckdb)
 
 
-db <- dbConnect(duckdb("processed_data/votes.duckdb", read_only = TRUE))
+db <- dbConnect(duckdb("processed_data/votes_tk2025.duckdb", read_only = TRUE))
 
 tbl(db, "vote") |> left_join(tbl(db, "party"), by = join_by(party_id == id)) |> head(100) |> collect()
 

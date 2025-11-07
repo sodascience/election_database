@@ -214,7 +214,7 @@ The `processed_data` folder should now look like this:
 Last, load the resulting parquet files and create the `main` view using duckdb:
 
 ```sh
-duckdb < 04_create_duckdb.sql
+duckdb < 03_create_duckdb.sql
 ```
 
 the file `votes.duckdb` should now appear in the `processed_data` folder.
