@@ -1,5 +1,5 @@
 # Analysis-ready election votes database
-[![rstats](https://img.shields.io/badge/Rstats-343434?logo=R)](https://cran.r-project.org/) [![duckdb](https://img.shields.io/badge/duckdb-343434?logo=duckdb)](https://duckdb.org)
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip) [![rstats](https://img.shields.io/badge/Rstats-343434?logo=R)](https://cran.r-project.org/) [![duckdb](https://img.shields.io/badge/duckdb-343434?logo=duckdb)](https://duckdb.org)
 
 The Dutch government makes all data from the general elections (Tweede Kamerverkiezingen) available. For example:
 - Candidate list of the elections in 2025: [kiesraad.nl](https://www.kiesraad.nl/adviezen-en-publicaties/publicaties/2025/09/25/overzicht-kandidatenlijsten-tweede-kamerverkiezing-2025)
@@ -8,6 +8,9 @@ The Dutch government makes all data from the general elections (Tweede Kamerverk
 The problem: the format is quite horrible, because these data are not created with analysis in mind, but rather reliability, trustworthiness, and auditability on a local scale.
 
 The goal of this repository is to create an efficient analysis-ready relational database, which can be used for all kinds of election analysis, focussing on political parties, municipalities, or candidates. The smallest unit of analysis is the "stembureau" which is the locations where voting takes place. This data is also ready to be connected to external data sources through clear ID variables, efficient subtables. 
+
+> [!WARNING]
+> This is work in progress, the database was not validated; the data pipeline is provided as-is. There are several inaccuracies with this data, please do your own consistency / accuracy checks!
 
 This enables plotting and analysis!
 
