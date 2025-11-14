@@ -10,7 +10,7 @@ The problem: the format is quite horrible, because these data are not created wi
 The goal of this repository is to create an efficient analysis-ready relational database, which can be used for all kinds of election analysis, focussing on political parties, municipalities, or candidates. The smallest unit of analysis is the "stembureau" which is the locations where voting takes place. This data is also ready to be connected to external data sources through clear ID variables, efficient subtables. 
 
 > [!WARNING]
-> This is work in progress, the database was not validated; the data pipeline is provided as-is. There are several inaccuracies with this data, please do your own consistency / accuracy checks!
+> This is work in progress, the database was not validated; the data pipeline is provided as-is. There may be several inaccuracies with this data, please do your own consistency / accuracy checks!
 
 This enables plotting and analysis!
 
