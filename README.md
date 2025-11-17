@@ -25,7 +25,7 @@ The database was created using [duckdb](https://duckdb.org), a fast and portable
 library(tidyverse)
 library(duckdb)
 
-dbc <- dbConnect(duckdb("votes_tk2023.duckdb", read_only = TRUE))
+dbc <- dbConnect(duckdb("votes_tk2025.duckdb", read_only = TRUE))
 
 # note that these tbls are "lazy"
 vote_tbl  <- tbl(dbc, "vote") 
