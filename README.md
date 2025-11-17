@@ -39,18 +39,18 @@ left_join(vote_tbl, party_tbl, by = join_by(party_id == id)) |>
 ```
 ```
 # A tibble: 100 × 7  
-   kieskring_id gemeente_id bureau_id   party_id candidate_nr votes name 
-   <chr>        <chr>       <chr>          <int>        <int> <int> <chr>
- 1 1            0014        0014::SB100        1            1   110 VVD  
- 2 1            0014        0014::SB100        1            2     5 VVD  
- 3 1            0014        0014::SB100        1            3     1 VVD  
- 4 1            0014        0014::SB100        1            4     4 VVD  
- 5 1            0014        0014::SB100        1            5     1 VVD  
- 6 1            0014        0014::SB100        1            6     2 VVD  
- 7 1            0014        0014::SB100        1            7     1 VVD  
- 8 1            0014        0014::SB100        1            8     1 VVD  
- 9 1            0014        0014::SB100        1            9     5 VVD  
-10 1            0014        0014::SB100        1           10     0 VVD  
+   kieskring_id gemeente_id bureau_id   party_id candidate_nr votes name                         
+   <chr>        <chr>       <chr>          <int>        <int> <int> <chr>                        
+ 1 1            0014        0014::SB100        1            1    37 PVV (Partij voor de Vrijheid)
+ 2 1            0014        0014::SB100        1            2     1 PVV (Partij voor de Vrijheid)
+ 3 1            0014        0014::SB100        1            3     2 PVV (Partij voor de Vrijheid)
+ 4 1            0014        0014::SB100        1            4     1 PVV (Partij voor de Vrijheid)
+ 5 1            0014        0014::SB100        1            5     0 PVV (Partij voor de Vrijheid)
+ 6 1            0014        0014::SB100        1            6     4 PVV (Partij voor de Vrijheid)
+ 7 1            0014        0014::SB100        1            7     0 PVV (Partij voor de Vrijheid)
+ 8 1            0014        0014::SB100        1            8     0 PVV (Partij voor de Vrijheid)
+ 9 1            0014        0014::SB100        1            9     0 PVV (Partij voor de Vrijheid)
+10 1            0014        0014::SB100        1           10     1 PVV (Partij voor de Vrijheid)
 # ℹ 90 more rows
 # ℹ Use `print(n = ...)` to see more rows
 ```
